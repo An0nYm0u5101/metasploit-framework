@@ -19,7 +19,7 @@ group :development do
   # for development and testing purposes
   gem 'pry-byebug'
   # module documentation
-  gem 'octokit'
+  gem 'octokit', '>= 4.19.0'
   # memory profiling
   gem 'memory_profiler'
   # cpu profiling
@@ -31,14 +31,14 @@ end
 
 group :development, :test do
   # automatically include factories from spec/factories
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 6.2.0'
   # Make rspec output shorter and more useful
   gem 'fivemat'
   # running documentation generation tasks and rspec tasks
   gem 'rake'
   # Define `rake spec`.  Must be in development AND test so that its available by default as a rake test when the
   # environment is development
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 4.0.2'
   gem 'rspec-rerun'
   gem 'rubocop'
   gem 'swagger-blocks'
